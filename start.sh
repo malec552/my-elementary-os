@@ -22,4 +22,6 @@ wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/power
 wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/zshrc-aliases -O ~/.zshrc_aliases
 
 chsh -s $(which zsh)
+zsh
+source ~/.zshrc
 
