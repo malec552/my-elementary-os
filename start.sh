@@ -15,9 +15,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 wget https://github.com/Peltoche/lsd/releases/download/$LSD_VERSION/lsd_"$LSD_VERSION"_amd64.deb
 dpkg -i lsd_"$LSD_VERSION"_amd64.deb
-mkdir -p ~/.local/share/fonts
-wget https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf -o ~/.local/share/fonts/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-fc-cache -f -v
 
 chsh -s $(which zsh)
 
