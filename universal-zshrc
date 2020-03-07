@@ -1,0 +1,14 @@
+export ZSH="/Users/maly/.oh-my-zsh"
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+if [ -f $HOME/.zshrc_powerlevel9k ]; then
+   . $HOME/.zshrc_powerlevel9k
+fi
+
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+if [ -f $HOME/.zshrc_aliases ]; then
+    . $HOME/.zshrc_aliases
+fi

@@ -16,5 +16,10 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 wget https://github.com/Peltoche/lsd/releases/download/$LSD_VERSION/lsd_"$LSD_VERSION"_amd64.deb
 dpkg -i lsd_"$LSD_VERSION"_amd64.deb
 
+wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/terminator-config -O ~/.config/terminator/config
+wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/universal-zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/powerlevel9k-config -O ~/.zshrc_powerlevel9k
+wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/zshrc-aliases -O ~/.zshrc_aliases
+
 chsh -s $(which zsh)
 
