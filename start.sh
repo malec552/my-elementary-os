@@ -15,6 +15,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 wget https://github.com/Peltoche/lsd/releases/download/$LSD_VERSION/lsd_"$LSD_VERSION"_amd64.deb
 sudo dpkg -i lsd_"$LSD_VERSION"_amd64.deb
+rm ~/lsd_"$LSD_VERSION"_amd64.deb
 mkdir -p ~/.config/terminator
 wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/terminator-config -O ~/.config/terminator/config
 wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/universal-zshrc -O ~/.zshrc
@@ -22,4 +23,4 @@ wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/power
 wget https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/zshrc-aliases -O ~/.zshrc_aliases
 
 printf "\n%s" "You need to download Hack Nerd Font and setup in terminator for lsd"
-printf "\n%s [DONE]\n"
+printf "\n%s [DONE]\n" "... initialized"
