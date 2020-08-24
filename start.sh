@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y openssh-server software-properties-common
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
-sudo apt-get install -y terminator timeshift git curl zsh htop
+sudo apt-get install -y terminator timeshift git curl zsh htop vim
 
 # install bat - cat with wings :)
 BAT_VERSION=$(curl -s "https://api.github.com/repos/sharkdp/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
