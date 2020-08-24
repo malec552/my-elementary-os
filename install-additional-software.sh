@@ -31,4 +31,14 @@ curl -LO https://github.com/derailed/k9s/releases/download/$K9S_LATEST_VERSION/k
 tar -xvf k9s_"$(uname -s)"_"$(uname -p)".tar.gz
 chmod +x ./k9s
 sudo mv ./k9s /usr/local/bin/k9s
-rm LICENSE README.md
+rm LICENSE README.md k9s_"$(uname -s)"_"$(uname -p)".tar.gz
+ 
+# helm
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+
+# minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# az cli
+curl -L https://aka.ms/InstallAzureCli | bash
