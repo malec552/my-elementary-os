@@ -43,3 +43,10 @@ rm minikube-linux-amd64
 
 # az cli
 curl -L https://aka.ms/InstallAzureCli | bash
+
+# istio
+ISTIO_LATEST_VERSION=$(curl -s "https://api.github.com/repos/istio/istio/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+
+curl -L https://istio.io/downloadIstio | ISTIO_VERSION="$ISTIO_LATEST_VERSION" sh -
+sudo mv istio-"$ISTIO_LATEST_VERSION"/bin/istioctl /usr/local/bin/istioctl
+rm -rf istio-"$ISTIO_LATEST_VERSION"
