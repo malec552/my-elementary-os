@@ -46,4 +46,12 @@ cd ~/
 # vim
 sh <(curl https://j.mp/spf13-vim3 -L)
 
+cat <<EOF > ~/.vimrc.local
+set nospell
+set nolist
+let g:go_fmt_command = "goimports"
+let g:NERDTreeWinPos = "left"
+autocmd vimenter * if !argc() | NERDTree | endif
+EOF
+
 printf "\n%s [DONE]\n" "... initialized"
