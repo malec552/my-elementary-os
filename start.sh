@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LSD_VERSION=0.16.0
+LSD_VERSION=0.17.0
 
 printf "\n%s [START]\n\n" "initializing your os..."
 
