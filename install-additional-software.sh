@@ -30,5 +30,5 @@ K9S_LATEST_VERSION=$(curl -s "https://api.github.com/repos/derailed/k9s/releases
 curl -LO https://github.com/derailed/k9s/releases/download/$K9S_LATEST_VERSION/k9s_"$(uname -s)"_"$(uname -p)".tar.gz
 tar -xvf k9s_"$(uname -s)"_"$(uname -p)".tar.gz
 chmod +x ./k9s
-mv ./k9s /usr/local/bin/k9s
+sudo mv ./k9s /usr/local/bin/k9s
 rm LICENSE README.md
