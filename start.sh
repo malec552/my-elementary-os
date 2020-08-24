@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-LSD_VERSION=0.17.0
-
 printf "\n%s [START]\n\n" "initializing your os..."
 
 sudo apt-get update && sudo apt-get upgrade -y
@@ -9,6 +7,8 @@ sudo apt-get install -y openssh-server software-properties-common
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install -y terminator timeshift git curl zsh
+
+LSD_VERSION=$(curl -s "https://api.github.com/repos/Peltoche/lsd/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
