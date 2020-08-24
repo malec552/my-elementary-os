@@ -43,4 +43,7 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 fc-cache -f -v
 cd ~/
 
+# vim
+sh <(curl https://j.mp/spf13-vim3 -L)
+
 printf "\n%s [DONE]\n" "... initialized"
