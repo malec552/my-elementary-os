@@ -14,9 +14,10 @@
   [[default]]
     background_darkness = 0.75
     background_type = transparent
+    font = DroidSansMono Nerd Font 10
     cursor_color = "#aaaaaa"
     login_shell = True
     scroll_on_output = True
     scrollback_infinite = True
     scrollbar_position = hidden
-    use_system_font = True
+    use_system_font = False
