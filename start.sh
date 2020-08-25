@@ -44,7 +44,7 @@ fc-cache -f -v
 cd ~/
 
 # vim
-sh -c "$(curl https://j.mp/spf13-vim3 -L)"
+sh -c "$(curl -fsSL https://j.mp/spf13-vim3)"
 
 cat <<EOF > ~/.vimrc.local
 set nospell
