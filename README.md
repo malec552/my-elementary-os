@@ -8,4 +8,4 @@
 
 ### additional software
 
-```sh -c "$(curl -fsSL https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/install-additional-software.sh)"
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/adrianmalec/my-elementary-os/master/install-additional-software.sh)"```
