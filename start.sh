@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y openssh-server software-properties-common
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
-sudo apt-get install -y terminator timeshift git curl zsh htop vim
+sudo apt-get install -y terminator timeshift git curl zsh htop vim gvim
 
 # install bat - cat with wings :)
 BAT_VERSION=$(curl -s "https://api.github.com/repos/sharkdp/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
@@ -52,6 +52,11 @@ set nolist
 let g:go_fmt_command = "goimports"
 let g:NERDTreeWinPos = "left"
 autocmd vimenter * if !argc() | NERDTree | endif
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+endif
 EOF
 
 printf "\n%s [DONE]\n" "... initialized"
